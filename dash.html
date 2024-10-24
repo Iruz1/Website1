@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>Paduka.</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="user.png" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <div>Customers</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>Buyer</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users-rectangle"></i>
+                        <div>Employees</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Analytics</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                        <div>Earning</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div>Help</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">50</div>
+                        <div class="card-named">customers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">80</div>
+                        <div class="card-named">Buyers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">2</div>
+                        <div class="card-named">Employees</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users-rectangle"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">$1000</div>
+                        <div class="card-named">Earning</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Earning (past 12 month)</h2>
+                    <canvas id="linenChart"></canvas>
+                </div>
+                <div class="chart" id="doughnut-chart">
+                    <h2>Employees</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+
+</body>
+
+</html>
